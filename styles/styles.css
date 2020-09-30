@@ -49,8 +49,10 @@ body {
 	min-width: 320px;
 	margin: 0;
 
-	background-color: #fff; /*под проект*/
-	font-family: Noto Sans, Arial, sans-serif; /*в "" свой шрифт под проект*/
+	background-color: #fff;
+	/*под проект*/
+	font-family: Noto Sans, Arial, sans-serif;
+	/*в "" свой шрифт под проект*/
 
 	font-size: 16px;
 	color: #111;
@@ -58,7 +60,8 @@ body {
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
-button, input {
+button,
+input {
 	font: inherit;
 }
 
@@ -83,7 +86,10 @@ ul {
 	margin: 0;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
 	padding: 0;
 	margin: 0;
 }
@@ -276,11 +282,11 @@ footer {
 	margin-bottom: .8rem;
 }
 
-.footer-list > a {
+.footer-list>a {
 	color: #484848;
 }
 
-.footer-list > a:hover {
+.footer-list>a:hover {
 	color: #111;
 	text-decoration: underline;
 }
@@ -608,7 +614,8 @@ footer {
 .goods-list {
 	display: -ms-grid;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1.25rem;
+	grid-gap grid-template-columns: repeat(4, 1fr);
 }
 
 .goods-list__item {
@@ -751,17 +758,17 @@ footer {
 	line-height: 1.385;
 }
 
-.product > *:nth-child(1) {
+.product>*:nth-child(1) {
 	-ms-grid-row: 1;
 	-ms-grid-column: 1;
 }
 
-.product > *:nth-child(2) {
+.product>*:nth-child(2) {
 	-ms-grid-row: 1;
 	-ms-grid-column: 2;
 }
 
-.product > *:nth-child(3) {
+.product>*:nth-child(3) {
 	-ms-grid-row: 1;
 	-ms-grid-column: 3;
 }
@@ -909,7 +916,7 @@ select {
 		-ms-grid-columns: 1fr 1.25rem 2fr 1.25rem 1fr 1.25rem 1fr;
 		grid-template-columns: 1fr 2fr 1fr 1fr;
 		-ms-grid-rows: auto 1.25rem auto 1.25rem auto;
-		grid-template-areas: "burger logo wishlist cart" "main main . sidebar" "footer footer footer footer";
+		grid-template-areas: "burger logo wishlist cart""main main . sidebar""footer footer footer footer";
 	}
 
 	.btn-burger {
@@ -945,10 +952,9 @@ select {
 		-webkit-box-pack: center;
 		-ms-flex-pack: center;
 		justify-content: center;
-		grid-template-areas: "catalog" "about" "connection";
+		grid-template-areas: "catalog""about""connection";
 		-ms-grid-columns: 300px;
 		grid-template-columns: 300px
-
 	}
 
 	.footer-catalog {
@@ -987,19 +993,16 @@ select {
 	.footer-catalog {
 		-ms-grid-row: 1;
 		-ms-grid-column: 1
-
 	}
 
 	.footer-about {
 		-ms-grid-row: 2;
 		-ms-grid-column: 1
-
 	}
 
 	.footer-connection {
 		-ms-grid-row: 3;
 		-ms-grid-column: 1
-
 	}
 }
 
