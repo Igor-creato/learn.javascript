@@ -47,13 +47,6 @@ const generateHeader = () => {
 };
 
 
-const generateCatalog = () => {
-    const catalog = `
-        
-        `;
-    document.main.insertAdjacentHTML('afterend', catalog);
-};
+
 
 generateHeader();
-
-generateCatalog();
